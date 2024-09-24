@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      
+      
+    }
+
+    .swiper {
+      width: 90%;
+      height: 20%;
+        
+      margin-top: 30px;
+      
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      border-radius: 10px;
+    
+    }
+
+    .swiper-button-prev{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: url("./images/left.svg");
+        background-size: cover;
+        
+
+    }
+    .swiper-button-prev::after{
+        content: "";
+    }
+    .swiper-button-next{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: url("./images/right.svg");
+        background-size: cover;
+       
+    }
+    .swiper-button-next::after{
+        content: "";
+    }
+    @media (max-width: 760px) {
+      .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+     <!-- Swiper -->
+     <div class="swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/cappuccino.jpeg" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹283.50</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" width="16px">
+            <p class="w-[100px]  text-base flex justify-start">Cappuccino</p>
+            <p class="w-[130px] text-[8px] text-[#6C757D] flex justify-start">SHORT()</p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/hot choco.webp" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹309.75</p> 
+          </div>
+          <div class=" w-[200px] flex flex-col gap-1" style="height: 110px;">
+            <img src="./images/veg.svg" width="16px">
+            <p class="w-[260px] text-base flex justify-start">Signature Hot Chocolate </p>
+            <p class="w-[130px] text-[8px] text-[#6C757D] flex justify-start"> SHORT(237 mL)284 kcal </p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/vanilla.webp" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹378.00</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" width="16px">
+            <p class="w-[140px] text-base flex justify-start">Vanilla Milkshake</p>
+            <p class="w-[180px] text-[8px] text-[#6C757D]  flex justify-start"> TALL(354 mL) PER SERVE (354ml)  - 531 Kcal </p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/cold brew.webp" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹299.25</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" width="16px">
+            <p class="w-[130px] text-base flex justify-start">Cold Brew Black</p>
+            <p class="w-[130px] text-[8px] text-[#6C757D] flex justify-start"> SHORT(Short Cold Brew Black) </p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/cappuccino.jpeg" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹388.50</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" width="16px">
+            <p class="w-[200px] text-base flex justify-start">Tall Java Chip Frappuccino </p>
+            <p class="w-[130px] text-[8px]  flex justify-start text-[#6C757D]">TALL()</p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        direction: getDirection(),
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            resize: function () {
+            swiper.changeDirection(getDirection());
+            },
+        },
+        });
+
+        function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+        }
+    </script>  
+</body>
+</html> 
+

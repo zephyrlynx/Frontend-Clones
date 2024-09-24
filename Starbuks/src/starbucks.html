@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 85%;
+      height: 30%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+    .swiper-button-prev{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background: url("./images/left.svg");
+      background-size: cover;
+      
+
+  }
+  .swiper-button-prev::after{
+      content: "";
+  }
+  .swiper-button-next{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background: url("./images/right.svg");
+      background-size: cover;
+      
+      
+     
+  }
+  .swiper-button-next::after{
+      content: "";
+  }
+  </style>
+</head>
+<body>
+    <nav class="border-2 flex justify-around h-[70px] bg-white  w-[100%]">
+        <div class="flex gap-[50px] items-center">
+            <img src="./images/logo.png" class="h-[50px] w-[50px]" >
+            <ul class="flex items-center gap-[50px]">
+                <li>Home</li>
+                <li>Gift</li>
+                <li>Order</li>
+                <li>Play</li>
+                <li>Store</li>
+            </ul>
+        </div>  
+        <div class="flex gap-[50px]  items-center">
+            <div class="flex rounded-full shadow-lg gap-[30px]" >
+                <img src="./images/search.svg" height="30px" width="30px" class="pl-3 cursor-pointer ">
+                <input type="text" placeholder="Looking for something Specific?" class="w-[230px] rounded-full  h-[35px] text-xs">
+            </div>
+            <img src="./images/account_thin.svg" height="30px" width="30px" class="cursor-pointer">
+        </div>
+    </nav>
+
+    <div class="bg-[#1E3932] h-[80px] text-white flex items-center justify-around  cursor-pointer">
+        <h5 class="w-[900px] text-lg">
+            Starbucks
+        </h5>
+        <div class="border border-white rounded-full w-[100px] h-[30px] flex items-center justify-center text-sm">
+            <button >Know more</button>
+        </div>
+    </div>
+
+    <div class="h-[10px]"></div>
+
+   
+   <!-- Swiper -->
+  <div class="swiper mySwiper" style="position:relative">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"
+        style="background-color: #06907E; display:flex; justify-content:space-between; border-radius:8px; position:relative; cursor:pointer;">
+          <div class="h-[150px] w-[100px]">
+            <img src="./images/banner1.png"  >
+          </div>
+          <div style="color: white; width:1050px; display:flex; flex-direction:column; align-items:start;margin-bottom:50px;gap:25px;   ">
+            <p style="font-size:12px; margin:5px;">Starbucks</p>
+            <p style="font-size:20px; margin:5px ; font-weight:500px">Beverage Subscription</p>
+            <p style="margin:5px;font-size:14px">Starbucks Subscription is Back! Your Favourites for Less. Tap for Details. T&C Apply</p>
+        </div>
+        <span style="color: white; font-size:10px; width:100px; position:absolute; top:10px; right:10px">*T&C Apply</span>
+        <div  class="bg-[white] h-[50px] w-[200px] m-10 flex justify-center items-center rounded-full absolute right-0 bottom-0 text-xs">
+            
+            <button ">Know more</button>
+        </div>
+        </div>
+        <div class="swiper-slide"
+        style="background-color: #036141;display:flex;border-radius:8px; justify-content:space-between ; position:relative ; cursor:pointer">
+        <div class="flex flex-col h-[220px] w-[100px] ">
+            <img src="./images/design.png" ">
+            
+        </div>
+        <div class=" w-[1050px] h-[90%] text-white flex flex-col items-start gap-10">
+            <div class="flex flex-col items-start gap-5">
+                <p class="text-xs">Now Brewing</p>
+                <p class="text-semibold">Starbucks Menu</p>
+                <p class="text-xs"> Indulge in season's feasting! Make your sips extra special. Explore Menu. </p>
+            </div>
+            <div class="flex flex-col items-start">
+                <p class="text-xs text-white" >Starting From</p>
+                <p class="text-base">Rs 250</p>
+            </div>
+            <div class="absolute right-10 bottom-10 rounded-full w-[190px] h-[50px] flex items-center justify-center text-white text-xs bg-[#01754A]">
+                <button>Order Now</button>
+            </div>
+        </div>
+        
+
+        </div>
+      
+    </div>
+    <div class="swiper-button-next" style="position: absolute;right:-15px;top:100px"></div>
+    <div class="swiper-button-prev" style="position: absolute;left:-15px;top:100px"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+    
+    <section class="h-[250px] m-20 flex justify-around flex-col">
+        <div>
+            <h2 class="w-[1000px] text-2xl font-bold pl-10">Handcrafted Curations</h2>
+        </div>
+         <div class="flex  justify-around">
+            <div>
+                <img src="./images/Bestseller.webp" alt="Bestseller" height="100px" width="100px" class="rounded-full cursor-pointer">
+                <p class="text-center">Bestseller</p>
+            </div>
+            <div>
+                <img src="./images/Drinks.webp" alt="Drinks" height="100px" width="100px" class="rounded-full cursor-pointer">
+                <p class="text-center">Drinks</p>
+            </div>
+            <div>
+                <img src="./images/Food.webp" alt="Food" height="100px" width="100px" class="rounded-full cursor-pointer">
+                <p class="text-center">Food</p>
+            </div>
+            <div>
+                <img src="./images/Merchandise.webp" alt="Merchandise" height="100px" width="100px" class="rounded-full cursor-pointer">
+                <p class="text-center">Merchandise</p>
+            </div>
+            <div>
+                <img src="./images/CoffeeAtHome.webp" alt="CoffeeAtHome" height="100px" width="100px" class="rounded-full cursor-pointer">
+                <p class="text-center">CoffeeAtHome</p>
+            </div>
+            <div>
+                <img src="./images/ReadyToEat.webp" alt="ReadyToEat" height="100px" width="100px" class="rounded-full cursor-pointer">
+                <p class="text-center">ReadyToEat</p>
+            </div>
+        </div>
+    </section>
+
+
+
+   <section class="h-[300px] bg-[#EDEBE9]">
+    <div class="flex justify-around ">
+        <div class="w-[1100px] text-2xl font-extrabold mt-5 ">Barista Recommends</div>
+        <div class="mt-5 text-[#01754A] text-xs cursor-pointer">View Menu</div>
+        <div><img src="./images/decor.svg"></div>
+    </div>
+    
+    <div>
+        <!-- Swiper -->
+     <div class="swiperTwo" style="position:relative ;width:1280px ; margin-left:60px">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide" style="display:flex; justify-content:space-between; width:200px; cursor:pointer">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/cappuccino.jpeg" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹283.50</p> 
+          </div>
+          <div class=" flex flex-col justify-start w-[200px] h-[100px]"  >
+            <img src="./images/veg.svg"style="height: 20px;width:20px" >
+            <p class="w-[100px]  text-base flex justify-start">Cappuccino</p>
+            <p class="w-[130px] text-[8px] text-[#6C757D] flex justify-start">SHORT()</p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between; cursor:pointer">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/hot choco.webp" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹309.75</p> 
+          </div>
+          <div class=" w-[200px] flex flex-col gap-1" style="height: 110px;">
+            <img src="./images/veg.svg" style="height: 20px;width:20px">
+            <p class="w-[260px] text-base flex justify-start">Signature Hot Chocolate </p>
+            <p class="w-[130px] text-[8px] text-[#6C757D] flex justify-start"> SHORT(237 mL)284 kcal </p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;cursor:pointer">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/vanilla.webp" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹378.00</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" style="height: 20px;width:20px">
+            <p class="w-[140px] text-base flex justify-start">Vanilla Milkshake</p>
+            <p class="w-[180px] text-[8px] text-[#6C757D]  flex justify-start"> TALL(354 mL) PER SERVE (354ml)  - 531 Kcal </p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;cursor:pointer">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/cold brew.webp" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹299.25</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" style="height: 20px;width:20px">
+            <p class="w-[130px] text-base flex justify-start">Cold Brew Black</p>
+            <p class="w-[130px] text-[8px] text-[#6C757D] flex justify-start"> SHORT(Short Cold Brew Black) </p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+
+        <div class="swiper-slide" style="display:flex; justify-content:space-between;cursor:pointer">
+          <div class="h-[100px] w-[100px] bg-cover  flex items-center justify-center flex-col mr-20 gap-8 ">
+            <img src="./images/cappuccino.jpeg" style="height: 90px; border-radius:10px; width:80px">
+            <p class="text-base mt-2">₹388.50</p> 
+          </div>
+          <div class=" w-[150px] flex flex-col " style="height: 110px;">
+            <img src="./images/veg.svg" style="height: 20px;width:20px">
+            <p class="w-[200px] text-base flex justify-start">Tall Java Chip Frappuccino </p>
+            <p class="w-[130px] text-[8px]  flex justify-start text-[#6C757D]">TALL()</p>
+          </div>
+          <div class=" h-[150px] " style="display: flex; justify-content:end; align-items:end; margin-bottom:10px; margin-right:10px">
+            <button class="bg-[#01754A] text-white rounded-full text-sm h-[30px] w-[100px] flex justify-center items-center" >Add Item</button>
+          </div>
+        </div>
+        </div>
+        <div class="swiper-button-next" style="position: absolute; top:60px; right:-50px"></div>
+        <div class="swiper-button-prev" style="position: absolute; top:60px; left:-50px"></div>
+    </div>
+
+
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper('.swiperTwo', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        direction: getDirection(),
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            resize: function () {
+            swiper.changeDirection(getDirection());
+            },
+        },
+        });
+
+        function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+        return direction;
+        }
+    </script>  
+    </div>
+   </section>
+
+    <div class="h-[40px]"></div>
+
+    
+    
+    <section class="bg-[#EDEBE9] h-[520px] w-[1440px]">
+        <div class="flex justify-around items-center h-[15%]">
+            <h2 class="text-2xl font-bold w-[70%]">Learn more about the world of coffee!</h2>
+            <p class="text-[#01754A]">Discover More</p>
+        </div>
+        <div class="container-img h-[400px] w-[1200px] ml-32  cursor-pointer" 
+        style="background-image: url('./images/learn.jpg'); background-size:cover; ">
+        <div class="h-[400px] w-[1200px] text-white pl-10 flex flex-col justify-between" style="background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important;">
+            <div class="bg-[#E5EDEB] h-[30px] w-[120px] text-[#009966] rounded-full m-4">
+                <button class="bg-[#E5EDEB] ">Coffee Culture</button>
+            </div>
+            <div class=" h-[200px] flex flex-col justify-end gap-7">
+                <p class="text-3xl font-bold">Art & Science of Coffee Brewing</p>
+                <p class="text-xs">Master the perfect Brew with Starbucks! Learn the art & science of coffee brewing.</p>
+            </div>
+            <div class="bg-[#fff] h-[30px] w-[200px] text-black rounded-full flex items-center justify-center mb-9">
+                <button>Learn More</button>
+            </div>
+                
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+
+    <div class="h-[40px]"></div>
+
+    <footer class="bg-[#0F382C]">
+        <div class=" h-[800px] flex justify-evenly pt-40 text-white">
+            <div>
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div>
+                <ul class="flex flex-col gap-7">
+                    <li class="text-lg cursor-pointer">About us</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Our Heritage</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Coffeehouse</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Our Company</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-7">
+                    <li class="text-lg cursor-pointer">Responsibility</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Diversity</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Community</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Ethical Sourcing</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Environmental Stewardship</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Learn More</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-7">
+                    <li class="text-lg cursor-pointer">Quick Links</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Privacy Policy</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">FAQs</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Starbucks India Mobile App Terms of Use</li>
+                    <li class="text-[#e6e6e69b]  cursor-pointer">Customer Service</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Delivery</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Season's Gifting</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Offer for Beverage Subscription at Starbucks.n</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Loyalty Program Terms and Conditions</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Starbucks Rewards Day Offer</li>
+                    <li class="text-[#e6e6e69b] cursor-pointer">Beverage Subscription</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col gap-7">
+                    <li class="text-xl cursor-pointer">SOCIAL MEDIA</li>
+                    <li class="flex gap-5 cursor-pointer" >
+                        <img src="./images/instagram.svg" alt="">
+                        <img src="./images/facebook.svg" alt="">
+                        <img src="./images/twitter.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img src="./images/appstoreiOS.png" alt="" class="cursor-pointer">
+                        <img src="./images/appstoreAndroid.png" alt="" class="cursor-pointer">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="border-[1px] border-[#B7C2BF] w-[1200px] ml-[110px]"></div>
+        </div>
+        <div class="flex items-center justify-around h-[80px]">
+            <div class="flex text-[#B7C2BF] gap-7 text-xs cursor-pointer">
+                <div >Web Accessiblity</div>
+                <div class="border-[1px]"></div>
+                <div>Privacy Statement</div>
+                <div class="border-[1px]"></div>
+                <div>Terms of Use</div>
+                <div class="border-[1px]"></div>
+                <div>Contact Us</div>
+            </div>
+            <div class="text-[#B7C2BF] text-xs cursor-pointer">
+                <p>© 2024 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
