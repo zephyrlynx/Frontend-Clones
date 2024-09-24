@@ -2,5 +2,13 @@
 
 This repo was made just for the frontend colnes that, I made of the some sites.
 
-# 1. Google Home Page (the most basic one)
-![image](https://github.com/user-attachments/assets/19499413-09d4-42e9-a383-0a54c804c51a)
+1. Google Home Page 
+2. Simple-HomePage (using bootstrap)
+3. Vs Code Landing page
+4. Zerodha Landing Page
+5. Discord Landing Page (using tailwind)
+6. Qspiders Landing Page (as an assignment)
+7. Zomato
+8. Netflix
+9. Starbucks
+10. Sundown Studio
